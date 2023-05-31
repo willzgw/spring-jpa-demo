@@ -1,0 +1,19 @@
+# See http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+spring:
+  datasource:
+    jdbc-url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8
+    username: guowei.zhang
+    password: Geek9527
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    pool-name: "local-test"
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+server:
+  port: 8008
+
+schedule:
+  fiveSec: "0/5 * * * * ?"
+  tenSec: "*/10 * * * * ?"
+  oneMin: "30 */1 * * * ?"
+  fiveMin: "30 */5 * * * ?"
